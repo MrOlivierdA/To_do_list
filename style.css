@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html {
+  background: linear-gradient(white, rgb(102, 102, 102)) no-repeat center center
+    fixed;
+  background-size: cover;
+}
+
+body {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+header img {
+  width: 64px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+input {
+  height: 3rem;
+  font-size: 18px;
+  border-radius: 2px;
+  border: 1px solid black;
+  margin: 2px;
+}
+
+input[type="text"] {
+  width: 25rem;
+  padding: 0px 10px;
+}
+
+input[type="submit"] {
+  background: pink;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  transform: scale(1.1);
+  transition: ease 0.5s;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  width: 35rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-weight: 300;
+}
+
+p {
+  margin: 0;
+  max-width: calc(35rem - 9rem);
+  font-weight: 500;
+  word-wrap: break-word;
+  font-size: larger;
+}
+
+button {
+  margin: 5px 0px 5px 0px;
+  width: 4rem;
+  height: 3rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  border-radius: 5px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.done {
+  background-color: rgba(153, 255, 0, 0.7);
+}
+.done::after {
+  content: "Done";
+}
+.delete {
+  background-color: red;
+}
+.undo {
+  background: rgba(0, 0, 0, 0);
+  color: blue;
+  border: 1px solid blue;
+}
+.undo::after {
+  content: "Undo";
+}
+.taskComplete {
+  text-decoration: line-through wavy hsl(0, 20%, 50%);
+  color: grey;
+}
