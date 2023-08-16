@@ -28,6 +28,7 @@ input {
   font-size: 18px;
   border-radius: 2px;
   border: 1px solid black;
+  border-radius: 10px;
   margin: 2px;
 }
 
@@ -37,7 +38,7 @@ input[type="text"] {
 }
 
 input[type="submit"] {
-  background: pink;
+  background: rgb(193, 219, 47);
   cursor: pointer;
 }
 
