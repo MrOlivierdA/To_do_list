@@ -1,35 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <title>To Do list</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://static-00.iconduck.com/assets.00/gitlab-logo-illustration-512x471-9t1zrpas.png"
+    />
+
+    <title>Private Todo list Oli</title>
+
+    <link href="./style.css" rel="stylesheet" />
   </head>
+
   <body>
     <header>
       <a href="https://github.com/MrOlivierdA/To_do_list" target="_blank"
         ><img
-          src="https://www.pngfind.com/pngs/m/171-1719983_gitlab-logo-svg-hd-png-download.png"
-          alt="Github"
-      /></a>
+        src="https://www.eficode.com/hs-fs/hubfs/Eficode%202020%20site%20images/Spots/select%20channel%20partner%20gitlab%20-%20trust%20badge%20-%20white%20hexagon%20-%20eficode.png?width=500&name=select%20channel%20partner%20gitlab%20-%20trust%20badge%20-%20white%20hexagon%20-%20eficode.png
+        alt="Github" /></a
+      >
     </header>
-    <form>
-      <input type="text" placeholder="Add a new task" required />
-      <input type="submit" value="+ Add task" />
-    </form>
-    <h1>This is your tasks :</h1>
-    <ul>
-      <!-- <li>
-        <p>1. Task to do</p>
-        <div>
-          <button class="done || undo"></button>
-          <button class="delete" data-key="JS Variable">Delete</button>
-        </div>
-      </li>
-      -->
-    </ul>
+
+    <div class="container">
+      <h1>Liste de tâches</h1>
+      <form action="">
+        <input
+          type="text"
+          id="item"
+          placeholder="Mission à inscrire ici ..."
+          autocomplete="off"
+          minlength="2"
+        />
+      </form>
+      <ul id="list"></ul>
+    </div>
   </body>
   <script src="./script.js"></script>
 </html>
